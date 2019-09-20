@@ -10,7 +10,55 @@
     <link rel="stylesheet" href="/assets/css/styles.css" />
   </head>
   <body>
-    <h1>Robert Mark Simpson</h1>
-    hello
+    <h1>ROBERT MARK SIMPSON</h1>
+    <h2>LECTURER IN PHILOSOPHY, UNIVERSITY COLLEGE LONDON</h2>
+    <h3>
+      Free Speech, Hate Speech, Liberalism, Social Epistemology, Human Rights,
+      Applied Ethics, History of Political Thought, Philosophy of Religion
+    </h3>
+
+    <navigation>
+      ACADEMIC ARTICLES : : OTHER WRITING : : ABOUT, CV, CONTACT
+    </navigation>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <section class='Writings'>
+      {% for writing in site.data.writings %}
+        {% include writing.html title=writing.title summary=writing.summary %}
+      {% endfor %}
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <navigation>
+      ACADEMIC ARTICLES : : OTHER WRITING : : ABOUT, CV, CONTACT
+    </navigation>
+    <section>Other writing</section>
+    <navigation>
+      ACADEMIC ARTICLES : : OTHER WRITING : : ABOUT, CV, CONTACT
+    </navigation>
+
+    <p>
+      For further information on my teaching, supervision, grants, fellowship,
+      professional service, and administrative work, see my CV – condensed
+      version / full version.
+    </p>
+
+    <p>
+      I’m from Melbourne. Before arriving at UCL I was a Lecturer at Monash
+      University (2013-17), and a Visiting Assistant Professor at the University
+      of Chicago (2015). I did my graduate studies at Oxford (2009-13) and
+      Monash (2007-08). I’ve contributed to various programs which bring
+      philosophy to a wider public, including the Stuart Low Trust, the
+      Victorian Association for Philosophy in Schools, The Leeds Film and
+      Philosophy Society, Humanities 21, the Drawing Room, and the Elucidations
+      podcast. Email me at robert [dot] simpson [at] ucl [dot] ac [dot] uk ::
+      Links to my other sites below
+    </p>
   </body>
 </html>

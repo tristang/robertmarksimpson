@@ -1,3 +1,33 @@
 body {
   font-family: sans-serif;
+  font-size: 16px;
+}
+
+.Writings {
+  width: 960px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
+.Writing {
+  flex: 0 0 32%;
+  background: #333;
+  margin: 0 5px;
+  &-title {
+    font-size: 1.2rem;
+  }
+  &-summary {
+    font-size: 1rem;
+  }
+  &-links {
+    font-size: 0.8rem;
+  }
+  &-link:not(:last-child) {
+    &:after{
+      content: "|";
+    }
+  }
 }
