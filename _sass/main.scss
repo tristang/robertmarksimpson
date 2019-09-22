@@ -38,6 +38,9 @@ body {
     }
     a {
       text-decoration: none;
+      &.selected {
+        font-weight: bold;
+      }
       &.selected, &:hover {
         color: #333;
       }
@@ -84,6 +87,19 @@ body {
 .About {
   text-align: center;
   font-size: 0.8em;
+  &-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    a {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    img {
+      height: 100%;
+    }
+  }
 }
 
 .Modal.tingle-modal {
