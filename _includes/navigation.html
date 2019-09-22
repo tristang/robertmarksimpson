@@ -1,0 +1,20 @@
+<navigation class="Page-navigation">
+
+  {% if include.selected == "academic" %}
+  <a href="#academic" class='selected'>ACADEMIC ARTICLES</a>
+  {% else %}
+  <a href="#academic">ACADEMIC ARTICLES</a>
+  {% endif %}
+  <span>: :</span>
+  {% if include.selected == "other" %}
+  <a href="#other" class='selected'>OTHER WRITING</a>
+  {% else %}
+  <a href="#other">OTHER WRITING</a>
+  {% endif %}
+  <span>: :</span>
+  {% if include.selected == "about" %}
+  <a href="#about" class='selected'>ABOUT, CV, CONTACT</a>
+  {% else %}
+  <a href="#about">ABOUT, CV, CONTACT</a>
+  {% endif %}
+</navigation>

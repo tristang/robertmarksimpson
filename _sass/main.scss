@@ -1,33 +1,91 @@
 body {
-  font-family: sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   font-size: 16px;
 }
 
-.Writings {
+.Page {
+  margin: 0 auto;
   width: 960px;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  align-content: flex-start;
-  justify-content: flex-start;
-}
-
-.Writing {
-  flex: 0 0 32%;
-  background: #ccc;
-  margin: 0 5px;
+  padding: 5rem 0;
+  &-title, &-subtitle, &-summary {
+    text-align: center;
+    margin: 0 auto;
+  }
+  &-subtitle, &-summary {
+    width: 550px;
+  }
   &-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  &-subtitle {
     font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
   }
   &-summary {
     font-size: 1rem;
+    margin-bottom: 1rem;
   }
-  &-links {
+  &-navigation {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0 2rem;
+    font-size: 1.2rem;
+    a, span {
+      margin: 0 5px;
+      color: #888;
+    }
+    a {
+      text-decoration: none;
+      &.selected, &:hover {
+        color: #333;
+      }
+    }
+  }
+}
+
+.Writings {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.Writing {
+  flex: 0 0 26%;
+  margin: 0 1rem 2rem;
+  &-title {
+    font-size: 0.95rem;
+    font-weight: normal;
+    margin: 0 0 0.5rem 0;
+  }
+  &-summary {
     font-size: 0.8rem;
+    margin: 0 0 0.5rem 0;
+  }
+  &-link {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: #888;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      color: #333;
+    }
   }
   &-link:not(:last-child) {
     &:after{
       content: "|";
     }
   }
+}
+
+.About {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.Modal.tingle-modal {
+  background: rgba(0, 0, 0, .55);
 }

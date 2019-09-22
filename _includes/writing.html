@@ -1,10 +1,9 @@
 <div class="Writing">
-  <h1 class="Writing-title">{{ include.title }}</h1>
+  <h4 class="Writing-title">{{ include.title }}</h4>
   <p class="Writing-summary">{{ include.publicationDetails }}</p>
   <span class="Writing-links">
-    <a class="Writing-link">
+    <a class="Writing-link" data-abstract="{{ include.abstract | escape }}">
       ABSTRACT
-      <span style="display: none;">{{ include.abstract }}</span>
     </a>
     {% if include.filename != nil %}
       <a class="Writing-link" href="/assets/pdfs/{{ include.filename }}" target="_blank">
@@ -12,7 +11,7 @@
       </a>
     {% endif %}
     {% if include.externalLink != nil %}
-      <a class="Writing-link" href={{ include.externalLink }} target="_blank">
+      <a class="Writing-link" href="{{ include.externalLink }}" target="_blank">
         {{ include.externalLinkName }}
       </a>
     {% endif %}
