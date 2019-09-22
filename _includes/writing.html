@@ -4,15 +4,15 @@
   <span class="Writing-links">
     <a class="Writing-link">
       ABSTRACT
-      <span style="font-size: 4px;">{{ include.abstract }}</span>
+      <span style="display: none;">{{ include.abstract }}</span>
     </a>
     {% if include.filename != nil %}
-      <a class="Writing-link" href={{ include.filename }}>
+      <a class="Writing-link" href="/assets/pdfs/{{ include.filename }}" target="_blank">
         AUTHOR’S PDF
       </a>
     {% endif %}
     {% if include.externalLink != nil %}
-      <a class="Writing-link">
+      <a class="Writing-link" href={{ include.externalLink }} target="_blank">
         {{ include.externalLinkName }}
       </a>
     {% endif %}
