@@ -1,15 +1,20 @@
 <div class="Writing">
   <h1 class="Writing-title">{{ include.title }}</h1>
-  <p class="Writing-summary">{{ include.summary }}</p>
+  <p class="Writing-summary">{{ include.publicationDetails }}</p>
   <span class="Writing-links">
     <a class="Writing-link">
       ABSTRACT
+      <span style="font-size: 4px;">{{ include.abstract }}</span>
     </a>
-    <a class="Writing-link">
-      AUTHOR’S PDF
-    </a>
-    <a class="Writing-link">
-      JOURNAL LINK
-    </a>
+    {% if include.filename != nil %}
+      <a class="Writing-link" href={{ include.filename }}>
+        AUTHOR’S PDF
+      </a>
+    {% endif %}
+    {% if include.externalLink != nil %}
+      <a class="Writing-link">
+        {{ include.externalLinkName }}
+      </a>
+    {% endif %}
   </span>
 </div>

@@ -27,7 +27,7 @@
     <br />
     <section class='Writings'>
       {% for writing in site.data.writings %}
-        {% include writing.html title=writing.title summary=writing.summary %}
+      {% include writing.html title=writing.title publicationDetails=writing.publicationDetails abstract=writing.abstract filename=writing.filename externalLink=writing.externalLink externalLinkName=writing.externalLinkName %}
       {% endfor %}
     </section>
     <br />
