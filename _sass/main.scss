@@ -5,7 +5,7 @@ body {
 
 .Page {
   margin: 0 auto;
-  width: 960px;
+  width: 760px;
   padding: 5rem 0;
   &-title, &-subtitle, &-summary {
     text-align: center;
@@ -52,12 +52,16 @@ body {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-between;
+  &:after {
+    content: "";
+    flex: 0 0 30%;
+  }
 }
 
 .Writing {
-  flex: 0 0 26%;
-  margin: 0 1rem 2rem;
+  flex: 0 0 30%;
+  margin: 0 0 2rem;
   &-title {
     font-size: 0.95rem;
     font-weight: normal;
@@ -85,8 +89,7 @@ body {
 }
 
 .About {
-  text-align: center;
-  font-size: 0.8em;
+  font-size: 0.7em;
   &-links {
     display: flex;
     align-items: center;
