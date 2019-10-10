@@ -13,11 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Robert Mark Simpson
+title: Robert Mark Simpson | Lecturer in Philosophy
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Robert Mark Simpson
-
+  Thee website of Robert Mark Simpson, Lecturer in Philosophy.
+  Free Speech, Hate Speech, Liberalism, Social Epistemology, Human Rights, Applied Ethics, History of Political Thought, Philosophy of Religion.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
