@@ -71,12 +71,8 @@ body {
   &-link {
     font-size: 0.7rem;
     text-transform: uppercase;
-    color: #888;
     text-decoration: none;
     cursor: pointer;
-    &:hover {
-      color: #333;
-    }
   }
   &-link:not(:last-child) {
     &:after{
@@ -99,6 +95,13 @@ body {
     img {
       height: 100%;
     }
+  }
+}
+
+a {
+  color: #888;
+  &:hover {
+    color: #333;
   }
 }
 
