@@ -16,7 +16,7 @@
 title: Robert Mark Simpson | UCL Philosophy Department
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Thee website of Robert Mark Simpson, Lecturer in Philosophy.
+  The website of Robert Mark Simpson, Lecturer in Philosophy.
   Free Speech, Hate Speech, Liberalism, Social Epistemology, Human Rights, Applied Ethics, History of Political Thought, Philosophy of Religion.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
